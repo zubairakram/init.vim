@@ -1,4 +1,4 @@
-# nvim/init.vim
+#nvim/init.vim
 ini.vim is simple neovim configuration file, contains basic settings and some neccessary plugins to change UI and autocompletion features.
 
 ## Getting Started

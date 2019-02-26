@@ -7,6 +7,9 @@ set shiftwidth=4
 set expandtab
 set autowriteall
 
+" copy from vim to clipboard key mapping
+vnoremap <C-c> "+y
+
 " vim-airline arrow setting
 let g:airline_left_alt_sep= ''
 let g:airline_left_sep = ''
