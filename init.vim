@@ -7,15 +7,17 @@ set shiftwidth=4
 set expandtab
 set autowriteall
 
-" copy-paste key mapping
-vnoremap <C-c> "+y
-map <C-v> "+p
-
 " vim-airline arrow setting
 let g:airline_left_alt_sep= ''
 let g:airline_left_sep = ''
 let g:airline_right_alt_sep = ''
 let g:airline_right_sep = ''
+
+"Smart Tab Line
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#left_sep = ''
+let g:airline#extensions#tabline#left_alt_sep = ''
+let g:airline#extensions#tabline#formatter = 'unique_tail' 
 
 " plugins
 call plug#begin()
@@ -23,6 +25,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'davidhalter/jedi-vim'
 Plug 'jiangmiao/auto-pairs'
 Plug 'kien/ctrlp.vim'
+Plug 'majutsushi/tagbar'
 Plug 'mattn/emmet-vim'
 Plug 'tpope/vim-fugitive'
 Plug 'vim-airline/vim-airline'
