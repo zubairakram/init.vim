@@ -24,7 +24,7 @@ curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
 after completing installation download init.vim file and move it to follwing place in your home directory
 
 ```
-.config/nvim/init.vim
+/.config/nvim/init.vim
 ```
 restart neovim and run `PlugInstall` command, That's it.
 
