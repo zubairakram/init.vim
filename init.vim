@@ -1,4 +1,4 @@
-" basic configuration
+"basic configuration
 set background=dark
 set relativenumber
 set number
@@ -28,11 +28,12 @@ Plug 'airblade/vim-gitgutter'
 Plug 'davidhalter/jedi-vim'
 Plug 'jiangmiao/auto-pairs'
 Plug 'kien/ctrlp.vim'
-Plug 'majutsushi/tagbar'
 Plug 'mattn/emmet-vim'
+Plug 'nvie/vim-flake8'
 Plug 'tpope/vim-fugitive'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-scripts/loremipsum'
+Plug 'yggdroot/indentline'
 call plug#end()
 
 
