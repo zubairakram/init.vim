@@ -6,6 +6,13 @@ set tabstop=4
 set shiftwidth=4
 set expandtab
 set autowriteall
+set cursorline
+
+" highlight current line
+hi cursorline cterm=none term=none
+autocmd WinEnter * setlocal cursorline
+autocmd WinLeave * setlocal nocursorline
+highlight CursorLine guibg=#303000 ctermbg=234
 
 " copy from vim to clipboard key mapping
 vnoremap <C-c> "+y
@@ -16,7 +23,7 @@ let g:airline_left_sep = ''
 let g:airline_right_alt_sep = ''
 let g:airline_right_sep = ''
 
-"Smart Tab Line
+" activate airline extension smart Tab Line
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#left_sep = ''
 let g:airline#extensions#tabline#left_alt_sep = ''
@@ -25,9 +32,9 @@ let g:airline#extensions#tabline#formatter = 'unique_tail'
 " plugins
 call plug#begin()
 Plug 'airblade/vim-gitgutter'
+Plug 'ctrlpvim/ctrlp.vim'
 Plug 'davidhalter/jedi-vim'
 Plug 'jiangmiao/auto-pairs'
-Plug 'ctrlpvim/ctrlp.vim'
 Plug 'mattn/emmet-vim'
 Plug 'nvie/vim-flake8'
 Plug 'terryma/vim-multiple-cursors'
