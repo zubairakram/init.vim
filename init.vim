@@ -7,6 +7,7 @@ set shiftwidth=4
 set expandtab
 set autowriteall
 set cursorline
+set noshowmode
 
 " highlight current line
 hi cursorline cterm=none term=none
