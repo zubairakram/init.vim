@@ -37,12 +37,12 @@ Plug 'ctrlpvim/ctrlp.vim'
 Plug 'davidhalter/jedi-vim'
 Plug 'jiangmiao/auto-pairs'
 Plug 'mattn/emmet-vim'
+Plug 'nvie/vim-flake8'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-fugitive'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-scripts/loremipsum'
-Plug 'w0rp/ale'
 Plug 'yggdroot/indentline'
 call plug#end()
 
