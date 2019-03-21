@@ -9,6 +9,9 @@ set autowriteall
 set cursorline
 set noshowmode
 
+" Netrw setting
+let g:netrw_liststyle=3
+
 " highlight current line
 hi cursorline cterm=none term=none
 autocmd WinEnter * setlocal cursorline
@@ -28,7 +31,7 @@ let g:airline_right_sep = ''
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#left_sep = ''
 let g:airline#extensions#tabline#left_alt_sep = ''
-let g:airline#extensions#tabline#formatter = 'unique_tail' 
+let g:airline#extensions#tabline#formatter = 'unique_tail_improved'
 
 " plugins
 call plug#begin()
