@@ -1,5 +1,4 @@
 "basic configuration
-set background=dark
 set relativenumber
 set number
 set tabstop=4
