@@ -40,6 +40,7 @@ Plug 'davidhalter/jedi-vim'
 Plug 'jiangmiao/auto-pairs'
 Plug 'mattn/emmet-vim'
 Plug 'nvie/vim-flake8'
+Plug 'posva/vim-vue'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-fugitive'
@@ -62,3 +63,4 @@ if (len($SECURITYSESSIONID) || len($DISPLAY)) && empty($SSH_ASKPASS)
     let $SSH_ASKPASS = "ssh-askpass"
   endif
 endif
+
