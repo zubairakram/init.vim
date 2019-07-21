@@ -52,7 +52,6 @@ call plug#end()
 
 " fugitive Gpush bug solution by @tpope
 " first install ssh-askpass
-"
 " sudo apt install ssh-askpass
 
 if (len($SECURITYSESSIONID) || len($DISPLAY)) && empty($SSH_ASKPASS)
