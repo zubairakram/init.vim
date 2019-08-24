@@ -9,7 +9,7 @@ set cursorline
 set noshowmode
 
 " Netrw setting
-let g:netrw_liststyle=3
+let g:netrw_liststyle = 3
 
 " highlight current line
 hi cursorline cterm=none term=none
@@ -49,6 +49,8 @@ Plug 'vim-scripts/loremipsum'
 Plug 'yggdroot/indentline'
 call plug#end()
 
+" custom ignore files
+let g:ctrlp_custom_ignore = 'node_modules\|dist\|DS_Store\|git'
 
 " fugitive Gpush bug solution by @tpope
 " first install ssh-askpass
@@ -62,4 +64,3 @@ if (len($SECURITYSESSIONID) || len($DISPLAY)) && empty($SSH_ASKPASS)
     let $SSH_ASKPASS = "ssh-askpass"
   endif
 endif
-
