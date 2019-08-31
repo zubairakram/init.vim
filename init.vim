@@ -7,6 +7,7 @@ set expandtab
 set autowriteall
 set cursorline
 set noshowmode
+set backupcopy=yes
 
 " Netrw setting
 let g:netrw_liststyle = 3
@@ -44,6 +45,7 @@ Plug 'posva/vim-vue'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-surround'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-scripts/loremipsum'
 Plug 'yggdroot/indentline'
