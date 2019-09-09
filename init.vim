@@ -37,11 +37,9 @@ let g:airline#extensions#tabline#formatter = 'unique_tail'
 call plug#begin()
 Plug 'airblade/vim-gitgutter'
 Plug 'ctrlpvim/ctrlp.vim'
-Plug 'davidhalter/jedi-vim'
 Plug 'jiangmiao/auto-pairs'
 Plug 'mattn/emmet-vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'nvie/vim-flake8'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-fugitive'
