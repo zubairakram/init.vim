@@ -9,6 +9,9 @@ set cursorline
 set noshowmode
 set backupcopy=yes
 
+" set .vue file as html
+autocmd BufNewFile,BufRead *.vue set filetype=html
+
 " Netrw setting
 let g:netrw_liststyle = 3
 
