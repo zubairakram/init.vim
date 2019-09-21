@@ -12,9 +12,6 @@ set backupcopy=yes
 " set .vue file as html
 autocmd BufNewFile,BufRead *.vue set filetype=html
 
-" Netrw setting
-let g:netrw_liststyle = 3
-
 " highlight current line
 hi cursorline cterm=none term=none
 autocmd WinEnter * setlocal cursorline
@@ -24,16 +21,8 @@ highlight CursorLine guibg=#303000 ctermbg=234
 " copy from vim to clipboard key mapping
 vnoremap <C-c> "+y
 
-" vim-airline arrow setting
-let g:airline_left_alt_sep= ''
-let g:airline_left_sep = ''
-let g:airline_right_alt_sep = ''
-let g:airline_right_sep = ''
-
 " activate airline extension smart Tab Line
 let g:airline#extensions#tabline#enabled = 1
-let g:airline#extensions#tabline#left_sep = ''
-let g:airline#extensions#tabline#left_alt_sep = ''
 let g:airline#extensions#tabline#formatter = 'unique_tail'
 
 " plugins
