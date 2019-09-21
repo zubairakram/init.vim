@@ -49,10 +49,10 @@ let g:ctrlp_custom_ignore = 'node_modules\|dist\|DS_Store\|git'
 " sudo apt install ssh-askpass
 
 if (len($SECURITYSESSIONID) || len($DISPLAY)) && empty($SSH_ASKPASS)
-  let s:gui_askpass = system("git --exec-path")[0:-2] . "/git-gui--askpass"
-  if executable(s:gui_askpass)
-    let $SSH_ASKPASS = s:gui_askpass
-  elseif executable("ssh-askpass")
-    let $SSH_ASKPASS = "ssh-askpass"
-  endif
+    let s:gui_askpass = system("git --exec-path")[0:-2] . "/git-gui--askpass"
+    if executable(s:gui_askpass)
+        let $SSH_ASKPASS = s:gui_askpass
+    elseif executable("ssh-askpass")
+        let $SSH_ASKPASS = "ssh-askpass"
+    endif
 endif
