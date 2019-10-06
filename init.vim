@@ -41,7 +41,7 @@ Plug 'yggdroot/indentline'
 call plug#end()
 
 " custom ignore files
-let g:ctrlp_custom_ignore = 'node_modules\|dist\|DS_Store\|git'
+let g:ctrlp_custom_ignore = 'node_modules\|dist\|build\|DS_Store\|git'
 
 " fugitive Gpush bug solution by @tpope
 " first install ssh-askpass
