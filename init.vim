@@ -30,19 +30,21 @@ call plug#begin()
 Plug 'airblade/vim-gitgutter'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'jiangmiao/auto-pairs'
+Plug 'leafgarland/typescript-vim'
 Plug 'mattn/emmet-vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'scrooloose/nerdtree'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-surround'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-scripts/loremipsum'
 Plug 'yggdroot/indentline'
 call plug#end()
 
 " custom ignore files
-let g:ctrlp_custom_ignore = 'node_modules\|dist\|build\|DS_Store\|git'
+let g:ctrlp_custom_ignore = 'node_modules\|dist\|target\|build\|DS_Store\|git'
 
 " fugitive Gpush bug solution by @tpope
 " first install ssh-askpass
