@@ -1,13 +1,13 @@
 "basic configuration
-set relativenumber
-set number
-set tabstop=4
-set shiftwidth=4
-set expandtab
 set autowriteall
-set cursorline
-set noshowmode
 set backupcopy=yes
+set cursorline
+set expandtab
+set noshowmode
+set number
+set relativenumber
+set shiftwidth=4
+set tabstop=4
 
 " set .vue file as html
 autocmd BufNewFile,BufRead *.vue set filetype=html
