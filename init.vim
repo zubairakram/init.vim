@@ -41,6 +41,7 @@ Plug 'tpope/vim-surround'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-scripts/loremipsum'
 Plug 'yggdroot/indentline'
+Plug 'yuttie/comfortable-motion.vim'
 call plug#end()
 
 " custom ignore files
