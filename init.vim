@@ -35,17 +35,24 @@ Plug 'mattn/emmet-vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'scrooloose/nerdtree'
 Plug 'terryma/vim-multiple-cursors'
+Plug 'tomasr/molokai'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
 Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 Plug 'vim-scripts/loremipsum'
 Plug 'yggdroot/indentline'
 Plug 'yuttie/comfortable-motion.vim'
 call plug#end()
 
+" colorscheme setting
+colorscheme molokai
+" airline_theme setting
+let g:airline_theme='angr'
+
 " custom ignore files
-let g:ctrlp_custom_ignore = 'node_modules\|dist\|target\|build\|DS_Store\|git'
+let g:ctrlp_custom_ignore = 'node_modules\|dist\|target\|build\|DS_Store\|.git\'
 
 " fugitive Gpush bug solution by @tpope
 " first install ssh-askpass
@@ -59,3 +66,4 @@ if (len($SECURITYSESSIONID) || len($DISPLAY)) && empty($SSH_ASKPASS)
         let $SSH_ASKPASS = "ssh-askpass"
     endif
 endif
+
