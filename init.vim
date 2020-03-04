@@ -49,7 +49,13 @@ call plug#end()
 " colorscheme setting
 colorscheme molokai
 " airline_theme setting
-let g:airline_theme='angr'
+let g:airline_theme='badwolf'
+
+" airline symbols
+let g:airline_left_sep = ''
+let g:airline_left_alt_sep = ''
+let g:airline_right_sep = ''
+let g:airline_right_alt_sep = ''
 
 " custom ignore files
 let g:ctrlp_custom_ignore = 'node_modules\|dist\|target\|build\|DS_Store\|.git\'
