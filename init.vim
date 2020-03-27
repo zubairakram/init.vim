@@ -31,8 +31,10 @@ Plug 'airblade/vim-gitgutter'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'jiangmiao/auto-pairs'
 Plug 'leafgarland/typescript-vim'
+Plug 'majutsushi/tagbar'
 Plug 'mattn/emmet-vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'peterhoeg/vim-qml'
 Plug 'scrooloose/nerdtree'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'tomasr/molokai'
@@ -46,8 +48,12 @@ Plug 'yggdroot/indentline'
 Plug 'yuttie/comfortable-motion.vim'
 call plug#end()
 
+" Short Key for Toggle NERDTree
+map <C-t> :NERDTreeToggle<CR>
+
 " colorscheme setting
 colorscheme molokai
+
 " airline_theme setting
 let g:airline_theme='badwolf'
 
@@ -72,4 +78,3 @@ if (len($SECURITYSESSIONID) || len($DISPLAY)) && empty($SSH_ASKPASS)
         let $SSH_ASKPASS = "ssh-askpass"
     endif
 endif
-
