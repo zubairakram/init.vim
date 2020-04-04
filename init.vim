@@ -48,6 +48,9 @@ Plug 'yggdroot/indentline'
 Plug 'yuttie/comfortable-motion.vim'
 call plug#end()
 
+" Register CocExtensions
+let g:coc_global_extensions = ['coc-css', 'coc-python', 'coc-tsserver', 'coc-rls']
+
 " Short Key for Toggle NERDTree
 map <C-t> :NERDTreeToggle<CR>
 
