@@ -54,6 +54,9 @@ let g:coc_global_extensions = ['coc-css', 'coc-python', 'coc-tsserver', 'coc-rls
 " Short Key for Toggle NERDTree
 map <C-t> :NERDTreeToggle<CR>
 
+" show hidden files in NERDTree
+let NERDTreeShowHidden=1
+
 " colorscheme setting
 colorscheme molokai
 
