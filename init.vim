@@ -34,10 +34,10 @@ Plug 'leafgarland/typescript-vim'
 Plug 'majutsushi/tagbar'
 Plug 'mattn/emmet-vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'nlknguyen/papercolor-theme'
 Plug 'rust-lang/rust.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'terryma/vim-multiple-cursors'
-Plug 'tomasr/molokai'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
@@ -58,10 +58,10 @@ map <C-t> :NERDTreeToggle<CR>
 let NERDTreeShowHidden=1
 
 " colorscheme setting
-colorscheme molokai
+colorscheme PaperColor
 
 " airline_theme setting
-let g:airline_theme='badwolf'
+let g:airline_theme='wombat'
 
 " airline symbols
 let g:airline_left_sep = ''
