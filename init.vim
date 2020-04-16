@@ -34,7 +34,6 @@ Plug 'leafgarland/typescript-vim'
 Plug 'majutsushi/tagbar'
 Plug 'mattn/emmet-vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'nlknguyen/papercolor-theme'
 Plug 'rust-lang/rust.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'terryma/vim-multiple-cursors'
@@ -42,7 +41,6 @@ Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
 Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
 Plug 'vim-scripts/loremipsum'
 Plug 'yggdroot/indentline'
 Plug 'yuttie/comfortable-motion.vim'
@@ -56,12 +54,6 @@ map <C-t> :NERDTreeToggle<CR>
 
 " show hidden files in NERDTree
 let NERDTreeShowHidden=1
-
-" colorscheme setting
-colorscheme PaperColor
-
-" airline_theme setting
-let g:airline_theme='wombat'
 
 " airline symbols
 let g:airline_left_sep = ''
