@@ -8,6 +8,7 @@ set number
 set relativenumber
 set shiftwidth=4
 set tabstop=4
+set background=dark
 
 " set .vue file as html
 autocmd BufNewFile,BufRead *.vue set filetype=html
@@ -37,6 +38,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'rust-lang/rust.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'terryma/vim-multiple-cursors'
+Plug 'rakr/vim-one'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
@@ -45,6 +47,9 @@ Plug 'vim-scripts/loremipsum'
 Plug 'yggdroot/indentline'
 Plug 'yuttie/comfortable-motion.vim'
 call plug#end()
+
+" set colorscheme
+colorscheme one
 
 " Register CocExtensions
 let g:coc_global_extensions = ['coc-css', 'coc-python', 'coc-tsserver', 'coc-rls']
