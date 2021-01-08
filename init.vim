@@ -29,8 +29,6 @@ call plug#begin()
 Plug 'airblade/vim-gitgutter'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'jiangmiao/auto-pairs'
-Plug 'leafgarland/typescript-vim'
-Plug 'majutsushi/tagbar'
 Plug 'mattn/emmet-vim'
 Plug 'mg979/vim-visual-multi'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -40,13 +38,12 @@ Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
 Plug 'vim-airline/vim-airline'
-Plug 'vim-scripts/loremipsum'
 Plug 'yggdroot/indentline'
 Plug 'yuttie/comfortable-motion.vim'
 call plug#end()
 
 " Register CocExtensions
-let g:coc_global_extensions = ['coc-css', 'coc-python', 'coc-tsserver', 'coc-rls']
+let g:coc_global_extensions = ['coc-css', 'coc-vetur', 'coc-tsserver', 'coc-rls']
 
 " Short Key for Toggle NERDTree
 map <C-t> :NERDTreeToggle<CR>
