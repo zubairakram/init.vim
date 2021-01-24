@@ -8,9 +8,6 @@ set relativenumber
 set shiftwidth=4
 set tabstop=4
 
-" set .vue file as html
-autocmd BufNewFile,BufRead *.vue set filetype=html
-
 " highlight current line
 hi cursorline cterm=none term=none
 autocmd WinEnter * setlocal cursorline
@@ -28,6 +25,7 @@ let g:airline#extensions#tabline#formatter = 'unique_tail'
 call plug#begin()
 Plug 'airblade/vim-gitgutter'
 Plug 'ctrlpvim/ctrlp.vim'
+Plug 'evanleck/vim-svelte'
 Plug 'jiangmiao/auto-pairs'
 Plug 'mattn/emmet-vim'
 Plug 'mg979/vim-visual-multi'
@@ -43,7 +41,7 @@ Plug 'yuttie/comfortable-motion.vim'
 call plug#end()
 
 " Register CocExtensions
-let g:coc_global_extensions = ['coc-css', 'coc-vetur', 'coc-tsserver', 'coc-rls']
+let g:coc_global_extensions = ['coc-css', 'coc-html', 'coc-svelte', 'coc-tsserver', 'coc-rls']
 
 " Short Key for Toggle NERDTree
 map <C-t> :NERDTreeToggle<CR>
