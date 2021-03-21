@@ -17,10 +17,6 @@ highlight CursorLine guibg=#303030 ctermbg=234
 " copy from vim to clipboard key mapping
 vnoremap <C-c> "+y
 
-" activate airline extension smart Tab Line
-let g:airline#extensions#tabline#enabled = 1
-let g:airline#extensions#tabline#formatter = 'unique_tail'
-
 " plugins
 call plug#begin()
 Plug 'airblade/vim-gitgutter'
@@ -30,8 +26,8 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'mattn/emmet-vim'
 Plug 'mg979/vim-visual-multi'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'preservim/nerdtree'
 Plug 'rust-lang/rust.vim'
-Plug 'scrooloose/nerdtree'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
@@ -39,6 +35,13 @@ Plug 'vim-airline/vim-airline'
 Plug 'yggdroot/indentline'
 Plug 'yuttie/comfortable-motion.vim'
 call plug#end()
+
+" activate airline extension smart Tab Line
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#formatter = 'unique_tail'
+
+" airline symbols
+let g:airline_powerline_fonts = 1
 
 " Register CocExtensions
 let g:coc_global_extensions = ['coc-css', 'coc-html', 'coc-svelte', 'coc-tsserver', 'coc-rls']
