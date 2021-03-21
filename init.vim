@@ -21,8 +21,8 @@ vnoremap <C-c> "+y
 call plug#begin()
 Plug 'airblade/vim-gitgutter'
 Plug 'ctrlpvim/ctrlp.vim'
-Plug 'evanleck/vim-svelte'
 Plug 'jiangmiao/auto-pairs'
+Plug 'leafoftree/vim-svelte-plugin'
 Plug 'mattn/emmet-vim'
 Plug 'mg979/vim-visual-multi'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
