@@ -19,12 +19,12 @@ vnoremap <C-c> "+y
 
 " plugins
 call plug#begin()
-Plug 'airblade/vim-gitgutter'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'jiangmiao/auto-pairs'
 Plug 'leafoftree/vim-svelte-plugin'
 Plug 'mattn/emmet-vim'
 Plug 'mg979/vim-visual-multi', {'branch': 'master'}
+Plug 'mhinz/vim-signify'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'rust-lang/rust.vim'
 Plug 'tpope/vim-commentary'
@@ -45,7 +45,7 @@ let g:airline_powerline_fonts = 1
 " Register CocExtensions
 let g:coc_global_extensions = ['coc-css', 'coc-html', 'coc-svelte', 'coc-tsserver', 'coc-rls']
 
-" Netrw settings
+" Netrw setting
 map <C-t> :Lexplore<CR>
 let g:netrw_liststyle = 3
 let g:netrw_winsize = -32
