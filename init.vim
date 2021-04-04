@@ -24,9 +24,8 @@ Plug 'ctrlpvim/ctrlp.vim'
 Plug 'jiangmiao/auto-pairs'
 Plug 'leafoftree/vim-svelte-plugin'
 Plug 'mattn/emmet-vim'
-Plug 'mg979/vim-visual-multi'
+Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'preservim/nerdtree'
 Plug 'rust-lang/rust.vim'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-fugitive'
@@ -46,11 +45,10 @@ let g:airline_powerline_fonts = 1
 " Register CocExtensions
 let g:coc_global_extensions = ['coc-css', 'coc-html', 'coc-svelte', 'coc-tsserver', 'coc-rls']
 
-" Short Key for Toggle NERDTree
-map <C-t> :NERDTreeToggle<CR>
-
-" show hidden files in NERDTree
-let NERDTreeShowHidden=1
+" Netrw settings
+map <C-t> :Lexplore<CR>
+let g:netrw_liststyle = 3
+let g:netrw_winsize = -32
 
 " custom ignore files
 let g:ctrlp_custom_ignore = 'node_modules\|dist\|target\|build\|DS_Store\|.git\'
