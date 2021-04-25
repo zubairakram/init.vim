@@ -1,4 +1,5 @@
 "basic configuration
+set autoread
 set autowriteall
 set backupcopy=yes
 set cursorline
@@ -7,6 +8,7 @@ set number
 set relativenumber
 set shiftwidth=4
 set tabstop=4
+set updatetime=100
 
 " highlight current line
 hi cursorline cterm=none term=none
@@ -19,12 +21,12 @@ vnoremap <C-c> "+y
 
 " plugins
 call plug#begin()
+Plug 'airblade/vim-gitgutter'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'jiangmiao/auto-pairs'
 Plug 'leafoftree/vim-svelte-plugin'
 Plug 'mattn/emmet-vim'
 Plug 'mg979/vim-visual-multi', {'branch': 'master'}
-Plug 'mhinz/vim-signify'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'rust-lang/rust.vim'
 Plug 'tpope/vim-commentary'
@@ -50,7 +52,7 @@ map <C-t> :Lexplore<CR>
 let g:netrw_liststyle = 3
 let g:netrw_winsize = -32
 
-" custom ignore files
+" custom ignore files from ctrlp search
 let g:ctrlp_custom_ignore = 'node_modules\|dist\|target\|build\|DS_Store\|.git\'
 
 " fugitive Gpush bug solution by @tpope
