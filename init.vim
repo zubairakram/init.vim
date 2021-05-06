@@ -37,6 +37,9 @@ Plug 'yggdroot/indentline'
 Plug 'yuttie/comfortable-motion.vim'
 call plug#end()
 
+" indentline character setting
+let g:indentLine_char = '▏'
+
 " activate airline extension smart Tab Line
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#formatter = 'unique_tail'
